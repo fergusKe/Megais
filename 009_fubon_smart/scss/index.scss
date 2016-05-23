@@ -1,0 +1,181 @@
+@import "compass/css3";
+// @import "extend";
+@import "mixin";
+
+a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	&:focus {
+		outline: none;
+	}
+}
+b {
+    position: absolute;
+    left: 0;
+    top: 0;
+	font-weight: normal;
+}
+html, body {
+	width: 100%;
+	height: 100%;
+}
+body {
+	background: #028E7C;
+}
+.wrap {
+	position: relative;
+	min-width: 1100px;
+	background: url(../images/bg-all.jpg) center 0 no-repeat;
+}
+.logo {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+}
+.nav {
+	position: absolute;
+	top: 15px;
+	right: 20px;
+    li {
+    	display: inline-block;
+    	width: 134px;
+    	height: 40px;
+    	background: url(../images/bt-menu.png);
+    }	
+    .index-btn {
+		&:hover {
+    		background-position: 0px -40px;
+    	}
+    }
+    .activity-btn {
+		background-position: -140px 0;
+		&:hover {
+    		background-position: -140px -40px;
+    	}
+    }
+    .award-btn {
+		background-position: -282px 0;
+		&:hover {
+    		background-position: -282px -40px;
+    	}
+    }
+}
+.main {
+    position: relative;
+    width: 1100px;
+    height: 819px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    font-size: 16px;
+    background: url(../images/kv-index.jpg);
+    .award-one {
+    	position: absolute;
+	    top: 355px;
+	    left: 180px;
+	    font-size: 16px;
+	    li {
+	    	position: relative;
+	    	font-size: 14px;
+	    	padding-left: 14px;
+	    }
+    	span {
+    		font-size: 23px;
+    		color: #c91216;
+    		font-weight: 700;
+    	}
+    }
+    .award-two {
+	    position: absolute;
+	    top: 544px;
+	    left: 180px;
+	    font-size: 16px;
+	    line-height: 1.4;
+	    span {
+    		font-size: 23px;
+    		color: #c91216;
+    		font-weight: 700;
+    	}
+    }
+    .explain {
+    	position: absolute;
+        top: 650px;
+	    left: 180px;
+	    width: 417px;
+	    font-size: 14px;
+	    li {
+	    	position: relative;
+	    	padding-left: 9px;
+	    	text-align: justify;
+	    }
+	    b {
+	    	top: 3px;
+	    }
+    }
+}
+.notes-controller {
+	position: relative;
+	width: 100%;
+	height: 65px;
+	background: url(../images/bg-note.png);
+	span {
+		width: 124px;
+		height: 22px;
+		background: url(../images/note-control-txt.png);
+		@include align();
+	}
+}
+.notes {
+	display: none;
+	position: relative;
+	margin-top: -5px;
+	height: 470px;
+	background: url(../images/bg-note-content.png);
+	.notes-content {
+		width: 920px;
+		height: 425px;
+		margin: auto;
+		font-size: 15px;
+		color: #FFF;
+		list-style-type: decimal;
+	    line-height: 1.7;
+		@include align();
+	}
+	// .notes-content {
+	// 	display: none;
+	// }
+}
+.footer {
+	position: relative;
+	height: 97px;
+	font-size: 18px;
+	text-align: center;
+	color: #FFF;
+	margin-top: -5px;
+	// line-height: 97px;
+	background: url(../images/bg-copyright.png);
+	ul {
+	    width: 710px;
+	    height: 48px;
+		@include align();
+	}
+	li {
+		&~li {
+		    margin-top: 3px;
+		}
+	}
+	a {
+		display: inline-block;
+		width: auto;
+		color: #FFF;
+	}
+}
+// .popup-link {
+// 	cursor: pointer;
+// }
+// @media screen and (max-width: 1100px) {
+//     body {
+//         width: 1100px;
+//     }
+// }

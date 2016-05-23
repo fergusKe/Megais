@@ -1,0 +1,69 @@
+@mixin bg($path,$cache:false){
+	background-image: image-url($path,false,$cache);
+	width: image-width($path);
+	height: image-height($path);
+}
+// @mixin bg($img)
+// 	background: url("../images/#{$img}")
+// 	width: image-width("../images/#{$img}")
+// 	height: image-height("../images/#{$img}")
+@mixin align($position: center) {
+	position: absolute;
+	@if $position == center {
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		margin: auto
+	}
+	@if $position == v {
+		top: 0;
+		bottom: 0;
+		margin: auto 0;
+	}
+	@if $position == h {
+		left: 0;
+		right: 0;
+		margin: auto 0;
+	}
+}
+@mixin triangle($size, $color, $align, $type: 1) {
+  height: 0;
+  width: 0;
+  @if $align == top {
+    border-bottom: $size * $type solid $color;
+    border-left: $size / 2 solid transparent;
+    border-right: $size / 2 solid transparent;
+  }
+  @else if $align == right {
+    border-left: $size * $type solid $color;
+    border-top: $size / 2 solid transparent;
+    border-bottom: $size / 2 solid transparent;
+  }
+  @else if $align == bottom {
+    border-top: $size * $type solid $color;
+    border-left: $size / 2 solid transparent;
+    border-right: $size / 2 solid transparent;
+  }
+  @else if $align == left {
+    border-right: $size * $type solid $color;
+    border-top: $size / 2 solid transparent;
+    border-bottom: $size / 2 solid transparent;
+  }
+  @else if $align == right-top {
+    border-right: $size solid $color;
+    border-bottom: $size solid transparent;
+  }
+  @else if $align == left-top {
+    border-left: $size solid $color;
+    border-bottom: $size solid transparent;
+  }
+  @else if $align == right-bottom {
+    border-right: $size solid $color;
+    border-top: $size solid transparent;
+  }
+  @else if $align == left-bottom {
+    border-left: $size solid $color;
+    border-top: $size solid transparent;
+  }
+}
