@@ -1,0 +1,186 @@
+@import "compass";
+@import "extend";
+
+.main {
+    @include box-sizing(border-box);
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.slider {
+	position: relative;
+	width: 100%;
+	font-size: 0;
+	padding-top: 101px;
+    overflow: hidden;
+	ul {
+		position: relative;
+		width: 99999px;
+	}
+	li {
+		display: inline-block;
+		cursor: pointer;
+	}
+	img {
+		width: 100%;
+	}
+	.btn {
+		position: absolute;
+		top: 50%;
+		left: 10px;
+		cursor: pointer;
+		&.next {
+			right: 10px;
+		    left: auto;
+		}
+	}
+	.sliderBar{
+		position: absolute;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		width: 132px;
+		text-align: center;
+		bottom: 13px;
+		li{
+			background-color: #FFF;
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			border: 4px solid #FFF;
+			border-radius: 50%;
+			transition: .3s;
+			&~li {
+				margin-left: 23px;
+			}
+		}
+		.active{
+			background-color:  #0089d1;
+		}
+	}
+}
+
+
+.section {
+	margin-top: 48px;
+	font-size: 0;
+	.title {
+		margin-bottom: 3px;
+	}
+	.double {
+		li {
+			a {
+				display: inline-block;
+				width: auto;
+				margin-top: 10px;
+				&~a {
+					margin-left: 10px;
+				}
+			}
+			// &~li {
+			// 	margin-top: 10px;
+			// }
+		}
+	}
+	&.s1 {
+		.single {
+			margin-top: 10px;
+			text-align: center;
+			background: #01b6ad;
+		}
+	}
+	&.s2 {
+		.single {
+			margin-top: 10px;
+			text-align: center;
+			background: #0089d1;
+		}
+	}
+}
+.s3 {
+	.item {
+		margin-top: 20px;
+		li {
+			display: inline-block;
+			&~li {
+				margin-left: 40px;
+			}
+		}
+	}
+}
+.s4 {
+	margin-top: 48px;
+	font-size: 0;
+	.title {
+		margin-bottom: 13px;
+	}
+	.item {
+		position: relative;
+		.info {
+		    a {
+		    	padding: 28px 0;
+			    img {
+			    	margin-left: 20px;
+			    }
+		    }
+		}
+		.more-btn {
+			position: absolute;
+		    top: 16px;
+			right: 0;
+		}
+	}
+}
+.s5 {
+	background: #F1F1F1;
+	text-align: center;
+    margin-top: 27px;
+	ul {
+		width: 578px;
+		margin: 0 auto;
+	}
+	li {
+		&~li {
+			border-top: 2px dashed #D6D6D6;
+		}
+		a {
+			padding: 25px 0;
+		}
+	}
+}
+.footer {
+	background: #7C7C7C;
+	font-size: 0;
+	.s1 {
+		border-bottom: 3px solid #BCBCBC;
+		li {
+			display: inline-block;
+			width: 195px;
+			text-align: center;
+			height: 117px;
+			&~li {
+				border-left: 3px solid #BCBCBC;
+			}
+			img {
+			    position: relative;
+			    top: 47px;
+			}
+		}
+		.item2 {
+		    width: 244px;
+		}
+	}
+	.s2 {
+		width: 305px;
+		margin: 23px auto;
+		li {
+			display: inline-block;
+			&~li {
+				margin-left: 35px;
+			}
+		}
+	}
+	.copyright {
+		text-align: center;
+	    padding-bottom: 10px;
+	}
+}

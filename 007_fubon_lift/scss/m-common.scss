@@ -1,0 +1,221 @@
+@import "compass";
+@import "extend";
+@import "mixin";
+
+a:focus {
+	outline: none;
+}
+input:focus {
+	outline: none;
+}
+a {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	background: url(../images/bg.jpg);
+}
+.wrapper {
+    position: relative;
+    width: 640px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.header {
+    // position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	height: 110px;
+	background: #FFF;
+	z-index: 9999;
+	.header-content {
+		position: relative;
+		width: 640px;
+		height: 110px;
+		margin: 0 auto;
+	    // margin-left: -webkit-calc(100vw - 100%);
+	    // margin-left: calc(100vw - 100%);
+	}
+	.logo {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		width: 217px;
+		height: 47px;
+		left: 16px;
+		margin: auto 0;
+	}
+	.nav-btn {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+	    left: 568px;
+	    width: 56px;
+	    height: 54px;
+		margin: auto 0;
+		background: #0089d1;
+		transition: .5s;
+		&.active {
+			background: #000;
+		}
+		.hamburger{
+			width: 100%;
+	    	height: 100%;
+		    padding: 0;
+	    }
+	    .hamburger-box {
+	    	position: absolute;
+	    	top: 0;
+	    	bottom: 0;
+	    	left: 0;
+	    	right: 0;
+	    	margin: auto;
+		    width: 36px;
+		    height: 30px;
+	    }
+		.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+		    width: 35px;
+		    height: 5px;
+		    background-color: #FFF;
+		}
+		.hamburger-inner {
+			margin-top: 0;
+		}
+	}
+	.other {
+		position: absolute;
+		left: 305px;
+		top: 0;
+		bottom: 0;
+		height: 46px;
+		margin: auto 0;
+		font-size: 0;
+		li {
+			display: inline-block;
+			vertical-align: top;
+			&~li {
+				margin-left: 20px;
+			}
+		}
+	}
+	.header-line {
+		position: absolute;
+		bottom: 0;
+		font-size: 0;
+	}
+}
+.nav {
+	display: none;
+	position: fixed;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	width: 100%;
+	height: 100%;
+	font-size: 0;
+	z-index: 9999;
+    // padding: 110px 30px;
+    // padding: 110px 0 0;
+	// background: #FFF;
+	text-align: center;
+	overflow-x: hidden;
+    overflow-y: auto;
+	// @include box-sizing(border-box);
+	.nav-container {
+	    position: absolute;
+	    width: 100%;
+	    height: 100%;
+	    left: 0px;
+	    top: 0;
+	}
+	.nav-content {
+	    perspective: 2000px;
+		// padding-left: calc(100vw - 100%);
+	}
+	.nav-popup {
+		width: 640px;
+		margin: 110px auto 0;
+		transform-style: preserve-3d;
+		transform: rotateY(-60deg);
+		transition: .4s;
+		&.turn {
+			transform: rotateY(0deg);
+		}
+		&.return {
+			transform: rotateY(60deg);
+		}
+	}
+	li {
+		position: relative;
+		height: 60px;
+		&~li {
+			background: #D3E9F7;
+		}
+		+li ~ li {
+			margin-top: 2px;
+		}
+	}
+	.login {
+		position: relative;
+		height: 74px;
+		border-bottom: 3px solid #D3E9F7;
+	}
+	.slogan {
+		position: relative;
+		height: 84px;
+		border-top: 3px solid #D3E9F7;
+	}
+	img {
+		@include align();
+	}
+}
+.nav-mask {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	opacity: 0;
+	z-index: 9999;
+	transition: .4s;
+	&.active {
+		opacity: .7;
+	}
+}
+// .copyright {
+//     position: absolute;
+//     bottom: 7px;
+//     left: 11px;
+// }
+
+// .footer {
+// 	position: fixed;
+// 	bottom: 0;
+// 	z-index: 99999;
+// 	.footer-content {
+// 		position: relative;
+// 		width: 640px;
+// 		margin: 0 auto;
+// 	}
+// 	.insurance-btn {
+// 		position: absolute;
+// 		left: 0;
+// 		bottom: 0;
+// 		width: 317px;
+// 		height: 83px;
+// 		z-index: 9999;
+// 	}
+// 	.calculate-btn {
+// 		position: absolute;
+// 		right: 0;
+// 		bottom: 0;
+// 		width: 317px;
+// 		height: 83px;
+// 		z-index: 9999;
+// 	}
+// }
