@@ -1,0 +1,176 @@
+@import "compass/css3";
+// @import "extend";
+@import "mixin";
+
+a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	&:focus {
+		outline: none;
+	}
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+}
+body {
+	background: #009581;
+}
+.wrap {
+	position: relative;
+	width: 100%;
+	background: url(../images/bg.jpg) center 0 no-repeat;
+	overflow: hidden;
+}
+.main {
+    position: absolute;
+    width: 1100px;
+    height: 720px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.logo {
+	position: absolute;
+	top: 0;
+	left: -60px;
+}
+.bg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	min-width: 1100px;
+	min-height: 870px;
+	font-size: 0;
+	overflow: hidden; 
+	z-index: -1;
+	img {
+		position: relative;
+		width: 100%; 
+	}
+}
+.info-box {
+    position: absolute;
+    width: 560px;
+    height: 284px;
+    top: 12%;
+    left: 80px;
+    z-index: 1;
+	.info {
+		.member-btn {
+			width: 203px;
+			height: 55px;
+			background: url(../images/member-btn.png) 0 0;
+			margin: 16px auto 0;
+			&:hover {
+				background-position: 0 -55px;
+			}
+		}
+	}
+	.info3 {
+		font-size: 16px;
+		font-weight: 700;
+		line-height: 1.5;
+		a {
+			display: inline-block;
+			width: auto;
+			color: #ee5316;
+			text-decoration: underline;
+			&:hover {
+				color: #ff8522;
+			}
+		}
+	}
+}
+.info-mask {
+    position: absolute;
+    left: -144px;
+    top: 0px;
+    // z-index: ;
+}
+.activity-controller {
+	display: inline-block;
+	position: relative;
+	margin-top: 720px;
+	width: 100%;
+	height: 55px;
+	background: #00829C;
+	img {
+		@include align();
+	}
+}
+.activity {
+	margin-top: -5px;
+	background: #2399B1;
+	.activity-content {
+		width: 1100px;
+		margin: 0 auto;
+		padding: 20px 70px 35px;
+		@include box-sizing(border-box);
+	}
+	.activity-content {
+		display: none;
+	}
+	.title {
+	    background: url(../images/activity/activity-title-bg.png);
+	    width: 128px;
+	    height: 48px;
+	    color: #00829c;
+	    text-align: center;
+	    line-height: 40px;
+	    font-size: 20px;
+	    font-weight: 700;
+	    margin-top: 15px;
+	    margin-bottom: 10px;
+	}
+	.way-img {
+		display: block;
+	    margin: 20px auto;
+	}
+	.intro-btn {
+    	margin: 25px auto;
+    	font-size: 0;
+    	text-align: center;
+    	li {
+    		display: inline-block;
+    		&~li {
+    			margin-left: 15px;
+    		}
+    	}
+    }
+	p {
+		line-height: 1.5;
+		color: #FFF;
+	}
+	a {
+		display: inline-block;
+		width: auto;
+		color: #fffc2a;
+		text-decoration: underline;
+		&:hover {
+			color: #ff8522;
+		}
+	}
+	span {
+		color: #ffdd1f;
+	}
+}
+.footer {
+	margin-top: -5px;
+	position: relative;
+	height: 25px;
+	background: #009581;
+	img {
+		@include align();
+	}
+}
+.popup-link {
+	cursor: pointer;
+}
+@media screen and (max-width: 1100px) {
+    body {
+        width: 1100px;
+    }
+}
