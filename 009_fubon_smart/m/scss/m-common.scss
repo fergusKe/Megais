@@ -1,0 +1,74 @@
+@import 'extend';
+a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	&:focus {
+		outline: none;
+	}
+}
+b {
+    position: absolute;
+    left: 0;
+    top: 0;
+	font-weight: normal;
+}
+html, body {
+	width: 100%;
+	height: 100%;
+}
+body {
+	// background: #028E7C;
+	background: #963;
+}
+.wrap {
+	position: relative;
+	width: 640px;
+	margin: 0 auto;
+	background: url(../images/bg-all.jpg) center 0 no-repeat;
+	overflow: hidden;
+}
+.logo {
+
+}
+.indent {
+	@extend %indent;
+}
+.nav {
+	font-size: 0;
+	background: #FFF;
+	border-bottom: 3px solid #028E7C;
+    li {
+    	display: inline-block;
+    	width: 140px;
+    	height: 80px;
+    	background: url(../images/m-bt-menu.png);
+	    vertical-align: top;
+	    &~li {
+	    	// border-left: 1px solid #028E7C;
+	    }
+    }	
+    .logo {
+    	width: 220px;
+    	height: 80px;
+    	background: url(../images/m-logo.gif) 50% 50% no-repeat;
+    }
+    .index-btn {
+    	background-position: -218px 0;
+		&:hover {
+    		background-position: -218px -84px;
+    	}
+    }
+    .activity-btn {
+		background-position: -358px 0;
+		&:hover {
+    		background-position: -358px -84px;
+    	}
+    }
+    .award-btn {
+		background-position: -499px 0;
+		&:hover {
+    		background-position: -499px -84px;
+    	}
+    }
+}

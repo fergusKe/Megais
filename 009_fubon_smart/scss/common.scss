@@ -1,1 +1,63 @@
-@import "compass/css3";
+@import 'extend';
+a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	&:focus {
+		outline: none;
+	}
+}
+b {
+    position: absolute;
+    left: 0;
+    top: 0;
+	font-weight: normal;
+}
+html, body {
+	width: 100%;
+	height: 100%;
+}
+body {
+	background: #028E7C;
+}
+.wrap {
+	position: relative;
+	min-width: 1100px;
+	background: url(../images/bg-all.jpg) center 0 no-repeat;
+}
+.logo {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+}
+.indent {
+	@extend %indent;
+}
+.nav {
+	position: absolute;
+	top: 15px;
+	right: 20px;
+    li {
+    	display: inline-block;
+    	width: 134px;
+    	height: 40px;
+    	background: url(../images/bt-menu.png);
+    }	
+    .index-btn {
+		&:hover {
+    		background-position: 0px -40px;
+    	}
+    }
+    .activity-btn {
+		background-position: -140px 0;
+		&:hover {
+    		background-position: -140px -40px;
+    	}
+    }
+    .award-btn {
+		background-position: -282px 0;
+		&:hover {
+    		background-position: -282px -40px;
+    	}
+    }
+}

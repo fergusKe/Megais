@@ -24,7 +24,7 @@
 	@if $position == h {
 		left: 0;
 		right: 0;
-		margin: auto 0;
+		margin: 0 auto;
 	}
 }
 @mixin triangle($size, $color, $align, $type: 1) {
