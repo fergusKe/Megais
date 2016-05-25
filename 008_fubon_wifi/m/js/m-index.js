@@ -1,7 +1,7 @@
 (function() {
 	$(function() {
 		setButton();
-
+		
 		// 滿版背景
 		var img = new Image;
 		img.onload = function() {

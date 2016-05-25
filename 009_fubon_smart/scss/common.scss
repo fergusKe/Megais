@@ -47,16 +47,25 @@ body {
 		&:hover {
     		background-position: 0px -40px;
     	}
+    	&.active {
+    		background-position: 0px -40px;
+    	}
     }
     .activity-btn {
 		background-position: -140px 0;
 		&:hover {
     		background-position: -140px -40px;
     	}
+    	&.active {
+    		background-position: -140px -40px;
+    	}
     }
     .award-btn {
 		background-position: -282px 0;
 		&:hover {
+    		background-position: -282px -40px;
+    	}
+    	&.active {
     		background-position: -282px -40px;
     	}
     }

@@ -26,14 +26,13 @@ html, body {
 }
 
 body {
-  background: #963;
+  background: #028E7C;
 }
 
 .wrap {
   position: relative;
   width: 640px;
   margin: 0 auto;
-  background: url(../images/bg-all.jpg) center 0 no-repeat;
   overflow: hidden;
 }
 
@@ -60,10 +59,16 @@ body {
 .nav .index-btn:hover {
   background-position: -218px -84px;
 }
+.nav .index-btn.active {
+  background-position: -218px -84px;
+}
 .nav .activity-btn {
   background-position: -358px 0;
 }
 .nav .activity-btn:hover {
+  background-position: -358px -84px;
+}
+.nav .activity-btn.active {
   background-position: -358px -84px;
 }
 .nav .award-btn {
@@ -71,6 +76,73 @@ body {
 }
 .nav .award-btn:hover {
   background-position: -499px -84px;
+}
+.nav .award-btn.active {
+  background-position: -499px -84px;
+}
+
+.scrollTop-btn {
+  position: absolute;
+  bottom: 15px;
+  right: 10px;
+  font-size: 0;
+}
+
+.notes-controller {
+  position: relative;
+  width: 100%;
+  height: 65px;
+  margin-top: -3px;
+  background: url(../images/m-bg-note.png);
+  background-position: 0 -1px;
+}
+.notes-controller span {
+  width: 165px;
+  height: 30px;
+  background: url(../images/m-note-control-txt.png) 0 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.notes {
+  display: none;
+  position: relative;
+  margin-top: -5px;
+  background: url(../images/bg-note-content.png);
+}
+.notes .notes-content {
+  position: relative;
+  width: 568px;
+  margin: 0 auto;
+  color: #FFF;
+  padding-left: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  list-style-type: decimal;
+  line-height: 1.7;
+  text-align: justify;
+}
+
+.footer {
+  position: relative;
+  font-size: 20px;
+  text-align: center;
+  color: #FFF;
+  margin-top: -5px;
+  padding: 19px 0px;
+  background: url(../images/m-bg-copyright.png);
+}
+.footer li ~ li {
+  margin-top: 3px;
+}
+.footer a {
+  display: inline-block;
+  width: auto;
+  color: #FFF;
 }
 
 /*# sourceMappingURL=m-common.css.map */

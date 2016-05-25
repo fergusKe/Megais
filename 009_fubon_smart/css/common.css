@@ -55,15 +55,24 @@ body {
 .nav .index-btn:hover {
   background-position: 0px -40px;
 }
+.nav .index-btn.active {
+  background-position: 0px -40px;
+}
 .nav .activity-btn {
   background-position: -140px 0;
 }
 .nav .activity-btn:hover {
   background-position: -140px -40px;
 }
+.nav .activity-btn.active {
+  background-position: -140px -40px;
+}
 .nav .award-btn {
   background-position: -282px 0;
 }
 .nav .award-btn:hover {
+  background-position: -282px -40px;
+}
+.nav .award-btn.active {
   background-position: -282px -40px;
 }

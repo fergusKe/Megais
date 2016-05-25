@@ -1,0 +1,56 @@
+.main {
+  position: relative;
+  font-size: 27px;
+}
+
+.content {
+  position: relative;
+  font-size: 0;
+}
+.content p {
+  position: absolute;
+  font-size: 27px;
+}
+.content .step1-1 {
+  top: 530px;
+  left: 55px;
+}
+.content .step1-2 {
+  top: 672px;
+  left: 447px;
+}
+.content .step1-3 {
+  top: 1302px;
+  left: 295px;
+}
+.content .step2-1 {
+  top: 1677px;
+  left: 377px;
+}
+.content .step2-2 {
+  top: 2308px;
+  left: 60px;
+  width: 244px;
+  text-align: justify;
+}
+.content .step2-3 {
+  top: 2308px;
+  left: 373px;
+  width: 244px;
+  text-align: justify;
+}
+.content .step3-1 {
+  top: 3183px;
+  left: 141px;
+}
+.content .step3-2 {
+  top: 3361px;
+  left: 262px;
+}
+.content .step3-2 span {
+  font-size: 33px;
+  color: #069d86;
+  font-weight: 700;
+}
+
+/*# sourceMappingURL=m-activity.css.map */
