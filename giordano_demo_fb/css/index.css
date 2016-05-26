@@ -1,0 +1,1089 @@
+.fb_dialog {
+  z-index: 999999 !important;
+}
+.wrap {
+  width: 100%;
+}
+.logo {
+  position: absolute;
+  z-index: 1000;
+}
+.page-box {
+  position: relative;
+  width: 400%;
+  height: 100%;
+}
+
+.page {
+  float: left;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 25%;
+  height: 100%;
+  vertical-align: top;
+}
+/*.page.active .animate {
+  position: relative;
+  top: -100px !important;
+  transition: all 1300ms cubic-bezier(0.175, 0.885, 0.32, 1.175);
+}*/
+
+.ex-center, .index .main .title .title1, .index .main .title .title2, .index .main .title .title3 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.index .main {
+  position: absolute;
+  width: 94%;
+  height: 58%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.index .main .human {
+  position: relative;
+  display: inline-block;
+  width: 51%;
+}
+.index .main .human img {
+  width: 100%;
+}
+.index .main .title {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  width: 516px;
+  height: 525px;
+  text-align: center;
+}
+.index .main .title li {
+  position: absolute;
+}
+.index .main .title .title2 {
+  top: 63px;
+}
+.index .main .title .title3 {
+  top: 132px;
+}
+.index .main .title .title4 {
+  top: 200px;
+}
+.index .main .title .letsgo-btn {
+  position: absolute;
+  width: 123px;
+  height: 126px;
+  left: 0;
+  right: 0;
+  top: 340px;
+  margin: 0 auto !important;
+}
+.index .main .title .letsgo-btn a {
+  width: 123px;
+  height: 126px;
+  background: url(../images/index/letsgo_btn.png) 0 0;
+}
+.index .main .title .letsgo-btn a:hover {
+  background: url(../images/index/letsgo_btn.png) 0 -126px;
+}
+
+.taiwan .logo {
+  display: inline-block;
+  margin: 20px 30px 0;
+}
+.taiwan .main {
+  position: absolute;
+  width: 1000px;
+  height: 700px;
+  left: 0;
+  right: 0;
+  top: -26px;
+  bottom: 0;
+  margin: auto;
+  text-align: center;
+}
+
+.taiwan .step2, .taiwan .step3, .taiwan .step4, .taiwan .step5, .taiwan .step6, .taiwan .step7 {
+  display: none;
+}
+.taiwan .step1 .step1-title {
+  position: relative;
+  top: -35px;
+}
+.taiwan .step1 .slider {
+  position: relative;
+  width: 890px;
+  height: 425px;
+  margin: 0 auto;
+  font-size: 0;
+}
+.taiwan .step1 .slider li {
+  position: absolute;
+  width: 326px;
+  height: 397px;
+  -webkit-transform: translateY(0) rotateZ(0) scale(1);
+      -ms-transform: translateY(0) rotate(0) scale(1);
+          transform: translateY(0) rotateZ(0) scale(1);
+  /*transition: .6s;*/
+}
+.taiwan .step1 .slider li.active {
+  z-index: 2;
+}
+.taiwan .step1 .slider .Alex {
+  /*z-index: 1;*/
+}
+.taiwan .step1 .slider .Alex a {
+  background: url(../images/taiwan/step1/Alex.png) 0 0;
+}
+.taiwan .slider li:hover {
+  z-index: 5;
+}
+.taiwan .step1 .slider li, .taiwan .step2 .slider li, .taiwan .step3 .slider li {
+  /*transition: z-index 0s, transform .5s, left .5s, top .5s !important;*/
+  /*transition: z-index 0s, transform .6s, left .6s, top .6s;*/
+  /*transition: transform .6s, left .6s, top .6s;*/
+  transition: all .6s, z-index .0000000000000000001s;
+}
+.taiwan .step1 .slider .Alex:hover {
+  /*z-index: 5;*/
+}
+.taiwan .step1 .slider .Alex a:hover {
+  background: url(../images/taiwan/step1/Alex.png) 0 -397px;
+}
+.taiwan .step1 .slider .Alex.active a {
+  background: url(../images/taiwan/step1/Alex.png) 0 -397px;
+}
+.taiwan .step1 .slider .Michelle a {
+  background: url(../images/taiwan/step1/Michelle.png);
+}
+.taiwan .step1 .slider .Michelle:hover {
+  /*z-index: 5;*/
+}
+.taiwan .step1 .slider .Michelle a:hover {
+  background: url(../images/taiwan/step1/Michelle.png) 0 -397px;
+}
+.taiwan .step1 .slider .Michelle.active a {
+  background: url(../images/taiwan/step1/Michelle.png) 0 -397px;
+}
+.taiwan .step1 .slider .Amy a {
+  background: url(../images/taiwan/step1/Amy.png);
+}
+.taiwan .step1 .slider .Amy:hover {
+  /*z-index: 5;*/
+}
+.taiwan .step1 .slider .Amy a:hover {
+  background: url(../images/taiwan/step1/Amy.png) 0 -397px;
+}
+.taiwan .step1 .slider .Amy.active a {
+  background: url(../images/taiwan/step1/Amy.png) 0 -397px;
+}
+.taiwan .step1 .slider .center, .taiwan .step1 .slider .index .main .title .title4, .index .main .title .taiwan .step1 .slider .title4 {
+  top: 0;
+  left: 50%;
+  margin-left: -163px;
+  -webkit-transform: translateY(0) rotateZ(0) scale(1);
+      -ms-transform: translateY(0) rotate(0) scale(1);
+          transform: translateY(0) rotateZ(0) scale(1);
+}
+.taiwan .step1 .slider .right {
+  left: 565px;
+  top: 0;
+  -webkit-transform: translateY(44px) rotateZ(7deg) scale(0.8);
+      -ms-transform: translateY(44px) rotate(7deg) scale(0.8);
+          transform: translateY(44px) rotateZ(7deg) scale(0.8);
+}
+.taiwan .step1 .slider .left {
+  left: 0;
+  top: -5px;
+  -webkit-transform: translateY(44px) rotateZ(-10deg) scale(0.8);
+      -ms-transform: translateY(44px) rotate(-10deg) scale(0.8);
+          transform: translateY(44px) rotateZ(-10deg) scale(0.8);
+}
+.taiwan .step1 .next-btn {
+  position: absolute;
+  right: -40px;
+  top: 400px;
+  width: 97px;
+  height: 100px;
+  background: url(../images/taiwan/next-btn.png) 0 0;
+}
+.taiwan .step1 .next-btn:hover {
+  background: url(../images/taiwan/next-btn.png) 0 -100px;
+}
+.taiwan .step2 .step1-title {
+  position: relative;
+  top: -35px;
+}
+.taiwan .step2 .slider {
+  position: relative;
+  width: 890px;
+  height: 425px;
+  margin: 0 auto;
+  font-size: 0;
+}
+.taiwan .step2 .slider li {
+  position: absolute;
+  display: inline-block;
+  width: 519px;
+  height: 356px;
+  /*transition: .5s;*/
+  /*z-index: 1;*/
+}
+.taiwan .step2 .slider li.active {
+  z-index: 2;
+}
+.taiwan .step2 .slider .search1 a {
+  background: url(../images/taiwan/step2/search1.png) 0 0;
+}
+.taiwan .step2 .slider .search1:hover {
+  /*z-index: 5;*/
+}
+.taiwan .step2 .slider .search1 a:hover {
+  background: url(../images/taiwan/step2/search1.png) 0 -356px;
+}
+.taiwan .step2 .slider .search1.active a {
+  background: url(../images/taiwan/step2/search1.png) 0 -356px;
+}
+.taiwan .step2 .slider .search2 a {
+  background: url(../images/taiwan/step2/search2.png) 0 0;
+}
+.taiwan .step2 .slider .search2:hover {
+  /*z-index: 5;*/
+}
+.taiwan .step2 .slider .search2 a:hover {
+  background: url(../images/taiwan/step2/search2.png) 0 -356px;
+}
+.taiwan .step2 .slider .search2.active a {
+  background: url(../images/taiwan/step2/search2.png) 0 -356px;
+}
+.taiwan .step2 .slider .search3 a {
+  background: url(../images/taiwan/step2/search3.png) 0 0;
+}
+.taiwan .step2 .slider .search3:hover {
+  /*z-index: 5;*/
+}
+.taiwan .step2 .slider .search3 a:hover {
+  background: url(../images/taiwan/step2/search3.png) 0 -356px;
+}
+.taiwan .step2 .slider .search3.active a {
+  background: url(../images/taiwan/step2/search3.png) 0 -356px;
+}
+.taiwan .step2 .slider .center, .taiwan .step2 .slider .index .main .title .title4, .index .main .title .taiwan .step2 .slider .title4 {
+  top: 0;
+  left: 50%;
+  margin-left: -259px;
+  -webkit-transform: translateY(0) rotateZ(0) scale(1);
+      -ms-transform: translateY(0) rotate(0) scale(1);
+          transform: translateY(0) rotateZ(0) scale(1);
+}
+.taiwan .step2 .slider .right {
+  left: 371px;
+  top: -24px;
+  -webkit-transform: translateY(44px) rotateZ(5deg) scale(0.84);
+      -ms-transform: translateY(44px) rotate(5deg) scale(0.84);
+          transform: translateY(44px) rotateZ(5deg) scale(0.84);
+}
+.taiwan .step2 .slider .left {
+  left: 0;
+  top: -40px;
+  -webkit-transform: translateY(44px) rotateZ(-10deg) scale(0.84);
+      -ms-transform: translateY(44px) rotate(-10deg) scale(0.84);
+          transform: translateY(44px) rotateZ(-10deg) scale(0.84);
+}
+.taiwan .step2 .prev-btn {
+  position: absolute;
+  left: -40px;
+  top: 400px;
+  width: 97px;
+  height: 100px;
+  background: url(../images/taiwan/back-btn.png) 0 0;
+}
+.taiwan .step2 .prev-btn:hover {
+  background: url(../images/taiwan/back-btn.png) 0 -100px;
+}
+.taiwan .step2 .next-btn {
+  position: absolute;
+  right: -40px;
+  top: 400px;
+  width: 97px;
+  height: 100px;
+  background: url(../images/taiwan/next-btn.png) 0 0;
+}
+.taiwan .step2 .next-btn:hover {
+  background: url(../images/taiwan/next-btn.png) 0 -100px;
+}
+.taiwan .step3 .step1-title {
+  position: relative;
+  top: -35px;
+}
+.taiwan .step3 .slider {
+  position: relative;
+  width: 890px;
+  height: 425px;
+  margin: 0 auto;
+  font-size: 0;
+}
+.taiwan .step3 .slider li {
+  position: absolute;
+  display: inline-block;
+  width: 519px;
+  height: 356px;
+  /*transition: .5s;*/
+  /*z-index: 1;*/
+}
+.taiwan .step3 .slider li.active {
+  z-index: 2;
+}
+.taiwan .step3 .slider.type1 .search1 a{background: url(../images/taiwan/step3/choose01-1.png) no-repeat;}
+.taiwan .step3 .slider.type1 .search2 a{background: url(../images/taiwan/step3/choose01-2.png) no-repeat;}
+.taiwan .step3 .slider.type1 .search3 a{background: url(../images/taiwan/step3/choose01-3.png) no-repeat;}
+.taiwan .step3 .slider.type2 .search1 a{background: url(../images/taiwan/step3/choose02-1.png) no-repeat;}
+.taiwan .step3 .slider.type2 .search2 a{background: url(../images/taiwan/step3/choose02-2.png) no-repeat;}
+.taiwan .step3 .slider.type2 .search3 a{background: url(../images/taiwan/step3/choose02-3.png) no-repeat;}
+.taiwan .step3 .slider.type3 .search1 a{background: url(../images/taiwan/step3/choose03-1.png) no-repeat;}
+.taiwan .step3 .slider.type3 .search2 a{background: url(../images/taiwan/step3/choose03-2.png) no-repeat;}
+.taiwan .step3 .slider.type3 .search3 a{background: url(../images/taiwan/step3/choose03-3.png) no-repeat;}
+
+.taiwan .step3 .slider .search1 a {
+  background-position: 0 0;
+}
+.taiwan .step3 .slider .search1:hover {
+  /*z-index: 5;*/
+}
+.taiwan .step3 .slider .search1 a:hover {
+  background-position: 0 -356px;
+}
+.taiwan .step3 .slider .search1.active a {
+  background-position: 0 -356px;
+}
+.taiwan .step3 .slider .search2 a {
+  background-position: 0 0;
+}
+.taiwan .step3 .slider .search2:hover {
+  /*z-index: 5;*/
+}
+.taiwan .step3 .slider .search2 a:hover {
+  background-position: 0 -356px;
+}
+.taiwan .step3 .slider .search2.active a {
+  background-position: 0 -356px;
+}
+.taiwan .step3 .slider .search3 a {
+  background-position: 0 0;
+}
+.taiwan .step3 .slider .search3:hover {
+  /*z-index: 5;*/
+}
+.taiwan .step3 .slider .search3 a:hover {
+  background-position: 0 -356px;
+}
+.taiwan .step3 .slider .search3.active a {
+  background-position: 0 -356px;
+}
+.taiwan .step3 .slider .center, .taiwan .step3 .slider .index .main .title .title4, .index .main .title .taiwan .step3 .slider .title4 {
+  top: 0;
+  left: 50%;
+  margin-left: -259px;
+}
+.taiwan .step3 .slider .right {
+  left: 371px;
+  top: -24px;
+  -webkit-transform: translateY(44px) rotateZ(5deg) scale(0.84);
+      -ms-transform: translateY(44px) rotate(5deg) scale(0.84);
+          transform: translateY(44px) rotateZ(5deg) scale(0.84);
+}
+.taiwan .step3 .slider .left {
+  left: 0;
+  top: -40px;
+  -webkit-transform: translateY(44px) rotateZ(-10deg) scale(0.84);
+      -ms-transform: translateY(44px) rotate(-10deg) scale(0.84);
+          transform: translateY(44px) rotateZ(-10deg) scale(0.84);
+}
+.taiwan .step3 .prev-btn {
+  position: absolute;
+  left: -40px;
+  top: 400px;
+  width: 97px;
+  height: 100px;
+  background: url(../images/taiwan/back-btn.png) 0 0;
+}
+.taiwan .step3 .prev-btn:hover {
+  background: url(../images/taiwan/back-btn.png) 0 -100px;
+}
+.taiwan .step3 .next-btn {
+  position: absolute;
+  right: -40px;
+  top: 400px;
+  width: 97px;
+  height: 100px;
+  background: url(../images/taiwan/next-btn.png) 0 0;
+}
+.taiwan .step3 .next-btn:hover {
+  background: url(../images/taiwan/next-btn.png) 0 -100px;
+}
+.taiwan .step4 .step1-title {
+  position: relative;
+  top: -35px;
+}
+.taiwan .step4 .content {
+  position: relative;
+  margin-top: 35px;
+  text-align: left;
+}
+.taiwan .step4 .map-box {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.taiwan .step4 .map-box .tag1-1 {
+  position: absolute;
+  left: 89px;
+  top: -100px;
+}
+.taiwan .step4 .map-box .tag1-2 {
+  position: absolute;
+  left: -7px;
+  top: -15px;
+}
+.taiwan .step4 .map-box .tag1-3 {
+  position: absolute;
+  left: 72px;
+  top: -100px;
+}
+.taiwan .step4 .map-box .tag2-1 {
+  position: absolute;
+  left: 20px;
+  top: 46px;
+}
+.taiwan .step4 .map-box .tag2-2 {
+  position: absolute;
+  left: 28px;
+  top: 1px;
+}
+.taiwan .step4 .map-box .tag2-3 {
+  position: absolute;
+  left: 69px;
+  top: -2px;
+}
+.taiwan .step4 .map-box .tag3-1 {
+  position: absolute;
+  left: 87px;
+  top: -96px;
+}
+.taiwan .step4 .map-box .tag3-2 {
+  position: absolute;
+  left: 75px;
+  top: 175px;
+}
+.taiwan .step4 .map-box .tag3-3 {
+  position: absolute;
+  left: -21px;
+  top: 65px;
+}
+.taiwan .step4 .shout-box {
+  padding-top: 35px;
+  margin-left: 150px;
+}
+.taiwan .step4 .shout-box .sub-title {
+  position: relative;
+  margin-left: 35px;
+}
+.taiwan .step4 .shout-box .sub-title .icon {
+  display: inline-block;
+}
+.taiwan .step4 .shout-box .sub-title p {
+  position: absolute;
+  display: inline-block;
+  top: -12px;
+  left: 28px;
+  vertical-align: top;
+  font-size: 20px;
+  font-weight: bold;
+}
+.taiwan .step4 .shout-box .sub-title p span {
+  font-size: 28px;
+  padding: 0 5px;
+  color: #ef1c3c;
+}
+.taiwan .step4 .shout-box .shout {
+  position: relative;
+  margin-top: 10px;
+}
+.taiwan .step4 .shout-box .shout .shout-input {
+  position: absolute;
+  left: 70px;
+  top: 95px;
+  width: 573px;
+  height: 55px;
+  border: none;
+  background: transparent;
+  padding-left: 15px;
+  color: #FFF;
+  font-size: 18px;
+}
+.taiwan .step4 .shout-box .shout .remain-word {
+  position: absolute;
+  left: 299px;
+  top: 161px;
+  font-size: 15px;
+  width: 18px;
+  text-align: center;
+}
+.taiwan .step4 .share-btn {
+  position: absolute;
+  right: 40px;
+  top: 40px;
+  width: 129px;
+  height: 132px;
+  background: url(../images/taiwan/step4/submit-btn.png) 0 0;
+}
+.taiwan .step4 .share-btn:hover {
+  background: url(../images/taiwan/step4/submit-btn.png) 0 -132px;
+}
+.taiwan .step4 .prev-btn {
+  position: absolute;
+  left: -62px;
+  top: 465px;
+  width: 97px;
+  height: 100px;
+  background: url(../images/taiwan/back-btn.png) 0 0;
+}
+.taiwan .step4 .prev-btn:hover {
+  background: url(../images/taiwan/back-btn.png) 0 -100px;
+}
+.taiwan .step5 .step1-title {
+  position: relative;
+  top: -35px;
+}
+.taiwan .step5 .content {
+  position: relative;
+  margin-top: -30px;
+}
+.taiwan .step5 .content input[type="text"], .taiwan .step5 .content select {
+  border: none;
+  background: #a2a2a2;
+  color: #FFF;
+}
+.taiwan .step5 .content input[type="text"] {
+  position: absolute;
+  left: 210px;
+  width: 494px;
+  height: 28px;
+  padding-left: 10px;
+}
+.taiwan .step5 .content .name {
+  top: 155px;
+}
+.taiwan .step5 .content .gender {
+  position: absolute;
+  left: 210px;
+  top: 185px;
+}
+.taiwan .step5 .content .gender input {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+}
+.taiwan .step5 .content .gender .male {
+  left: 0px;
+  top: 12px;
+}
+.taiwan .step5 .content .gender .female {
+  left: 64px;
+  top: 12px;
+}
+.taiwan .step5 .content .year {
+  position: absolute;
+  left: 210px;
+  top: 235px;
+  width: 156px;
+  height: 30px;
+}
+.taiwan .step5 .content .mouth {
+  position: absolute;
+  left: 383px;
+  top: 235px;
+  width: 156px;
+  height: 30px;
+}
+.taiwan .step5 .content .date {
+  position: absolute;
+  left: 556px;
+  top: 235px;
+  width: 156px;
+  height: 30px;
+}
+.taiwan .step5 .content .phone {
+  top: 275px;
+}
+.taiwan .step5 .content .mail {
+  top: 315px;
+}
+.taiwan .step5 .content #field {
+  position: absolute;
+  top: 361px;
+  left: 210px;
+  width: 20px;
+  height: 20px;
+}
+.taiwan .step5 .content #field.ie {
+  display: block;
+}
+.taiwan .step5 .content #field-svg.ie {
+  display: none;
+}
+.taiwan .step5 .content .law {
+  position: absolute;
+  left: 336px;
+  top: 361px;
+  width: 73px;
+  height: 21px;
+}
+.taiwan .step5 .content .submit-btn {
+  position: absolute;
+  right: 135px;
+  top: 174px;
+  width: 129px;
+  height: 132px;
+  background: url(../images/taiwan/step5/submit-btn.png) 0 0;
+}
+.taiwan .step5 .content .submit-btn:hover {
+  background: url(../images/taiwan/step5/submit-btn.png) 0 -132px;
+}
+.taiwan .step5 .content .reset-btn {
+  position: absolute;
+  right: 150px;
+  top: 314px;
+  width: 98px;
+  height: 101px;
+  background: url(../images/taiwan/step5/reset-btn.png) 0 0;
+}
+.taiwan .step5 .content .reset-btn:hover {
+  background: url(../images/taiwan/step5/reset-btn.png) 0 -101px;
+}
+.taiwan .step5 .share-btn {
+  position: absolute;
+  right: 40px;
+  top: 40px;
+  width: 129px;
+  height: 132px;
+  background: url(../images/taiwan/step4/submit-btn.png) 0 0;
+}
+.taiwan .step5 .share-btn:hover {
+  background: url(../images/taiwan/step4/submit-btn.png) 0 -132px;
+}
+.taiwan .step6 .step1-title {
+  position: relative;
+  top: -35px;
+}
+.taiwan .step6 .content {
+  position: relative;
+  margin-top: -30px;
+}
+.taiwan .step6 .content .fb-share-btn {
+  position: absolute;
+  right: 164px;
+  top: 118px;
+  width: 129px;
+  height: 132px;
+  background: url(../images/taiwan/step5/FB-share-btn.png) 0 0;
+}
+.taiwan .step6 .content .fb-share-btn:hover {
+  background: url(../images/taiwan/step5/FB-share-btn.png) 0 -132px;
+}
+.taiwan .step6 .next-btn {
+  position: absolute;
+  right: 164px;
+  top: 260px;
+  width: 129px;
+  height: 132px;
+  background: url(../images/taiwan/step5/next-btn.png) 0 0;
+}
+.taiwan .step6 .next-btn:hover {
+  background: url(../images/taiwan/step5/next-btn.png) 0 -132px;
+}
+.taiwan .step7 .step1-title {
+  position: relative;
+  top: -35px;
+}
+.taiwan .step7 .content {
+  position: relative;
+  margin-top: -30px;
+}
+.taiwan .step7 .content .story-btn {
+  position: absolute;
+  left: 230px;
+  top: 134px;
+  width: 238px;
+  height: 270px;
+  background: url(../images/taiwan/step5/story-btn.png) 0 0;
+}
+.taiwan .step7 .content .story-btn:hover {
+  background: url(../images/taiwan/step5/story-btn.png) 0 -270px;
+}
+.taiwan .step7 .content .shopping-btn {
+  position: absolute;
+  left: 500px;
+  top: 193px;
+  width: 127px;
+  height: 130px;
+  background: url(../images/taiwan/step5/shopping-btn.png) 0 0;
+}
+.taiwan .step7 .content .shopping-btn:hover {
+  background: url(../images/taiwan/step5/shopping-btn.png) 0 -130px;
+}
+.taiwan .step7 .content .again-btn {
+  position: absolute;
+  left: 644px;
+  top: 193px;
+  width: 127px;
+  height: 130px;
+  background: url(../images/taiwan/step5/again-btn.png) 0 0;
+}
+.taiwan .step7 .content .again-btn:hover {
+  background: url(../images/taiwan/step5/again-btn.png) 1px -130px;
+}
+.taiwan .step7 .share-btn {
+  position: absolute;
+  right: 40px;
+  top: 40px;
+  width: 129px;
+  height: 132px;
+  background: url(../images/taiwan/step4/submit-btn.png) 0 0;
+}
+.taiwan .step7 .share-btn:hover {
+  background: url(../images/taiwan/step4/submit-btn.png) 0 -132px;
+}
+
+.event .logo {
+  display: inline-block;
+  margin: 20px 30px 0;
+}
+.event .main {
+  position: absolute;
+  width: 1120px;
+  height: 700px;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  text-align: center;
+}
+.event .privacy-text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 118px;
+  margin: 0 auto;
+  width: 1120px;
+  height: 500px;
+  font-size: 0;
+  text-align: left;
+}
+.event .rules_title {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 354px;
+  height: 40px;
+  background: url(../images/title_rules.png) no-repeat;
+  text-indent: -9999px;
+}
+.event .rules_content {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 1120px;
+  height: 500px;
+}
+.event .btn_storeList.rules {
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: 250px;
+  width: 104px;
+  height: 104px;
+  background: url(../images/btn_storeList_rules.png) no-repeat;
+  text-indent: -9999px;
+}
+.event .btn_storeList:hover.rules {
+  background-position: 0 -104px;
+}
+.event .rollbar-handle {
+  background: url(../images/event/scrollbar.png);
+}
+
+.story .logo {
+  display: inline-block;
+  margin: 20px 30px 0;
+}
+.story .main {
+  position: absolute;
+  width: 1120px;
+  height: 700px;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  text-align: center;
+}
+.story .main .content {
+  position: relative;
+  margin-top: 75px;
+  text-align: left;
+}
+.story .main .step1 .photo {
+  display: inline-block;
+  vertical-align: top;
+}
+.story .main .step1 .info {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 50px;
+  margin-top: 7px;
+}
+.story .main .step1 .next-btn {
+  position: absolute;
+  right: 17px;
+  top: 149px;
+  width: 97px;
+  height: 100px;
+  background: url(../images/taiwan/next-btn.png) 0 0;
+}
+.story .main .step1 .next-btn:hover {
+  background: url(../images/taiwan/next-btn.png) 0 -100px;
+}
+.story .main .step2 {
+  display: none;
+}
+.story .main .step2 .photo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+.story .main .step2 .photo li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.story .main .step2 .photo li.active {
+  z-index: 2;
+}
+.story .main .step2 .photo .Alex {
+  width: 168px;
+  height: 194px;
+}
+.story .main .step2 .photo .Alex a {
+  background: url(../images/story/Alex.png) 0 0;
+}
+.story .main .step2 .photo .Alex.active a {
+  background: url(../images/story/Alex.png) 0 -194px;
+}
+.story .main .step2 .photo .Amy {
+  top: 163px;
+  width: 157px;
+  height: 185px;
+}
+.story .main .step2 .photo .Amy a {
+  background: url(../images/story/Amy.png) 0 0;
+}
+.story .main .step2 .photo .Amy.active a {
+  background: url(../images/story/Amy.png) 0 -185px;
+}
+.story .main .step2 .photo .Michelle {
+  top: 323px;
+  left: 9px;
+  width: 167px;
+  height: 194px;
+}
+.story .main .step2 .photo .Michelle a {
+  background: url(../images/story/Michelle.png) 0 0;
+}
+.story .main .step2 .photo .Michelle.active a {
+  background: url(../images/story/Michelle.png) 0 -194px;
+}
+.story .main .step2 .info {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 50px;
+  margin-top: 7px;
+}
+.story .main .step2 .info li {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: -30px;
+}
+.story .main .step2 .info li.active {
+  display: block;
+}
+.story .main .step2 .info .Alex {
+  top: -91px;
+}
+.story .main .step2 .info .Michelle {
+  top: -13px;
+  left: 16px;
+}
+
+svg {
+  border: none;
+  display: block;
+}
+
+label {
+  position: absolute;
+  top: 361px;
+  left: 210px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+      user-select: none;
+}
+label svg {
+  float: left;
+  width: 20px;
+  height: 20px;
+  background: #a2a2a2;
+}
+label svg rect, label svg polyline {
+  fill: none;
+  stroke-width: 4;
+}
+label svg rect {
+  stroke: #a2a2a2;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+input[type="checkbox"]:checked + label svg rect {
+  stroke: #a2a2a2;
+}
+input[type="checkbox"]:checked + label svg polyline {
+  stroke: #FFF;
+}
+input[type="checkbox"]:checked + label svg polyline {
+  -webkit-animation: checked 0.5s ease forwards;
+  animation: checked 0.5s ease forwards;
+  stroke-dasharray: 50;
+  stroke-dashoffset: 50;
+}
+
+@-webkit-keyframes checked {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes checked {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
+
+/*facebook interface*/
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .5);
+  z-index: 1000;
+}
+.fb-checkIn {
+  position: absolute;
+  width: 550px;
+  height: 594px;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.fb-checkIn .content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-top: -30px;
+  background: url(../images/taiwan/step5/checkIn/bg.png);
+}
+.fb-checkIn .user {
+  position: absolute;
+  left: 28px;
+  top: 48px;
+}
+.fb-checkIn .name {
+  position: absolute;
+  left: 122px;
+  top: 51px;
+}
+.fb-checkIn .message {
+  position: absolute;
+  left: 120px;
+  top: 77px;
+  width: 390px;
+  height: 45px;
+  resize: none;
+  padding-left: 10px;
+}
+.fb-checkIn .locationPhoto {
+  position: absolute;
+  left: 28px;
+  top: 146px;
+}
+.fb-checkIn .locationPhoto p {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 75px;
+  width: 375px;
+  text-align: center;
+}
+.fb-checkIn .word {
+  position: absolute;
+  left: 28px;
+  top: 417px;
+  width: 497px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.fb-checkIn .fb-location {
+  position: absolute;
+  left: 50px;
+  top: 447px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #3b5998;
+}
+.fb-checkIn .content .fb-checkIn-btn {
+  position: absolute;
+  left: 255px;
+  bottom: 12px;
+  width: 198px;
+  height: 45px;
+  background: url(../images/taiwan/step5/checkIn/checkIn-btn.png) 0 0;
+}
+.fb-checkIn .cancel-btn {
+  position: absolute;
+  left: 112px;
+  bottom: 12px;
+  width: 128px;
+  height: 45px;
+  background: url(../images/taiwan/step5/checkIn/cancel-btn.png) 0 0;
+}
