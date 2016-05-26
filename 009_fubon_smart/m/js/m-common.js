@@ -1,10 +1,12 @@
 (function($) {
 	var sliderIndex = 0;
-	var sliderLiLength = $('.slider li').length;
+	var sliderLiLength = 0;
 	$(function() {
 		setButton();
+		autoSlider();
 	});
 	function setButton() {
+		sliderLiLength = $('.slider li').length;
 		$('.slider .next-btn').on('click', function() {
 			sliderIndex++;
 			slider();
@@ -53,7 +55,6 @@
 		}, 550);
 	}
 	function slider() {
-		console.log('sliderIndex = ', sliderIndex);
 		if (sliderIndex > sliderLiLength - 1) {
 			sliderIndex = 0;
 		} else if (sliderIndex < 0) {
@@ -62,5 +63,18 @@
 		$('.slider li').removeClass('active').eq(sliderIndex).addClass('active');
 		$('.slider li').fadeOut();
 		$('.slider li.active').fadeIn();
+	}
+	function autoSlider() {
+		var sliderInterval = 0;
+		sliderIntervalFun();
+		$('.slider .next-btn, .slider .prev-btn').on('click', function() {
+			clearInterval(sliderInterval);
+			sliderIntervalFun();
+		});
+		function sliderIntervalFun() {
+			sliderInterval = setInterval(function() {
+				$('.slider .next-btn').click();
+			}, 3000);
+		}
 	}
 })(jQuery);

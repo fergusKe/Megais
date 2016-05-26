@@ -8,8 +8,13 @@
 .content {
 	position: relative;
     font-size: 0;
+	.word {
+		p {
+			position: absolute;
+			font-size: 27px;
+		}
+	}
 	p {
-		position: absolute;
 		font-size: 27px;
 	}
 	.w1 {

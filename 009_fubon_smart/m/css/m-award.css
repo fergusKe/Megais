@@ -7,8 +7,11 @@
   position: relative;
   font-size: 0;
 }
-.content p {
+.content .word p {
   position: absolute;
+  font-size: 27px;
+}
+.content p {
   font-size: 27px;
 }
 .content .w1 {
@@ -26,5 +29,3 @@
   top: 486px;
   left: 247px;
 }
-
-/*# sourceMappingURL=m-award.css.map */

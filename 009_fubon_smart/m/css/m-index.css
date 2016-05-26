@@ -1,6 +1,7 @@
 .main {
   position: relative;
   height: 1619px;
+  font-size: 23px;
   background: url(../images/m-kv-index.jpg);
 }
 .main .award-one {

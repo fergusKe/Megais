@@ -1,3 +1,4 @@
+@import "compass/css3";
 @import "mixin";
 @import "extend";
 a {
@@ -102,41 +103,54 @@ body {
 		@include align();
 	}
 }
+.notes-content {
+	// position: absolute;
+	// top: 300px;
+	font-size: 27px;
+	list-style-type: decimal;
+}
 .notes {
-	display: none;
+	// display: none;
 	position: relative;
 	margin-top: -5px;
-	// height: 470px;
 	background: url(../images/bg-note-content.png);
 	.notes-content {
-		position: relative;
-		width: 568px;
-		// height: 425px;
-		margin: 0 auto;
-		// font-size: 23px;
-		color: #FFF;
-		padding-left: 15px;
-		padding-top: 20px;
-		padding-bottom: 20px;
-		list-style-type: decimal;
-	    line-height: 1.7;
-	    text-align: justify;
+		// position: relative;
+		// width: 568px;
+		// margin: 0 auto;
+		// color: #FFF;
+		// padding-left: 15px;
+		// padding-top: 20px;
+		// padding-bottom: 20px;
+		// list-style-type: decimal;
+	 //    line-height: 1.7;
+	 //    text-align: justify;
+	 //    font-size: 23px;
+	    li {
+	    	position: relative;
+	    	// display: inline-block;
+    	    width: 100%;
+	    	// padding-left: 20px;
+	    	text-align: justify;
+	    	// font-size: 1rem;
+	    	@include box-sizing(border-box);
+	    }
+	    span {
+	    	position: absolute;
+    	    top: 2px;
+		    right: 98%;
+		    // font-size: 1rem;
+	    }
 	}
 }
 .footer {
 	position: relative;
-	// height: 97px;
 	font-size: 20px;
 	text-align: center;
 	color: #FFF;
 	margin-top: -5px;
     padding: 19px 0px;
-	background: url(../images/m-bg-copyright.png);
-	ul {
-	    // width: 710px;
-	    // height: 48px;
-		// @include align();
-	}
+	background: url(../images/m-bg-copyright.png) 0 -1px;
 	li {
 		&~li {
 		    margin-top: 3px;

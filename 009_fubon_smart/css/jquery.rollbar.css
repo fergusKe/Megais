@@ -61,7 +61,7 @@
 	width:30px;
 	height:30px;
 	background-color:#fff;
-	background:url(../images/register/scrollbar.png) no-repeat;
+	/*background:url(../images/register/scrollbar.png) no-repeat;*/
 	cursor:pointer;
 }
 
