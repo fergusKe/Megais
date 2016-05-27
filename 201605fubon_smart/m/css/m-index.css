@@ -1,0 +1,84 @@
+.main {
+  position: relative;
+  height: 1619px;
+  font-size: 23px;
+  background: url(../images/m-kv-index.jpg);
+  line-height: 1.4;
+}
+.main .award-one {
+  position: absolute;
+  top: 765px;
+  left: 30px;
+}
+.main .award-one li {
+  position: relative;
+  padding-left: 21px;
+}
+.main .award-one span {
+  font-size: 32px;
+  color: #c91216;
+  font-weight: 700;
+}
+.main .award-one .padding {
+  width: 564px;
+  text-align: justify;
+}
+.main .award-two {
+  position: absolute;
+  top: 1113px;
+  left: 30px;
+}
+.main .award-two span {
+  font-size: 32px;
+  color: #c91216;
+  font-weight: 700;
+}
+.main .award-two.padding {
+  width: 390px;
+  text-align: justify;
+}
+.main .explain {
+  position: absolute;
+  top: 1310px;
+  left: 47px;
+  width: 542px;
+}
+.main .explain li {
+  position: relative;
+  padding-left: 14px;
+  text-align: justify;
+}
+.main .explain b {
+  top: 3px;
+}
+
+.slider {
+  position: absolute;
+  top: 156px;
+  left: 344px;
+}
+.slider .slider-content li {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.slider .slider-content li ~ li {
+  display: none;
+}
+.slider .btn {
+  position: absolute;
+  width: 42px;
+  height: 62px;
+}
+.slider .prev-btn {
+  top: 235px;
+  left: 12px;
+  background: url(../images/m-bt-phone-left.png);
+}
+.slider .next-btn {
+  top: 266px;
+  left: 204px;
+  background: url(../images/m-bt-phone-right.png);
+}
+
+/*# sourceMappingURL=m-index.css.map */

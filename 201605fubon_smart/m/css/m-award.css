@@ -1,0 +1,30 @@
+.main {
+  position: relative;
+  font-size: 27px;
+}
+
+.content {
+  position: relative;
+  font-size: 0;
+}
+.content p {
+  position: absolute;
+  font-size: 27px;
+}
+.content .w1 {
+  position: absolute;
+  top: 190px;
+  left: 247px;
+}
+.content .w2 {
+  position: absolute;
+  top: 338px;
+  left: 247px;
+}
+.content .w3 {
+  position: absolute;
+  top: 486px;
+  left: 247px;
+}
+
+/*# sourceMappingURL=m-award.css.map */
