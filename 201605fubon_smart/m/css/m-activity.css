@@ -18,6 +18,13 @@
   width: 230px;
   height: 230px;
 }
+.step2-QRcode {
+  position: absolute;
+  top: 1407px;
+  left: 364px;
+  width: 257px;
+  height: 254px;
+}
 .step3-QRcode {
   position: absolute;
   top: 3308px;

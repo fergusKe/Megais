@@ -85,7 +85,7 @@
 		function sliderIntervalFun() {
 			sliderInterval = setInterval(function() {
 				$('.slider .next-btn').click();
-			}, 3000);
+			}, 5000);
 		}
 	}
 })(jQuery);

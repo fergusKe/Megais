@@ -80,7 +80,7 @@
 		function sliderIntervalFun() {
 			sliderInterval = setInterval(function() {
 				$('.slider .next-btn').click();
-			}, 4000);
+			}, 5000);
 		}
 	}
 })(jQuery);
